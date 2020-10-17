@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>
+      PRN Generator
+    </h1>
+    <form>
+      <div class="formfield">
+        Select Year -
+        <input
+          id="year"
+          type="number"
+          min="2000"
+          max="2099"
+          step="1"
+          maxlength="4"
+          value="2016"
+        />
+      </div>
+      <div class="formfield">
+        Select Branch -
+        <select id="branch">
+          <option value="CH">Chemical</option>
+          <option value="CS">Computer Science</option>
+          <option value="IT">Information Technology</option>
+          <option value="EX">Electronics</option>
+          <option value="CE">Civil</option>
+          <option value="ME">Mechanical</option>
+        </select>
+      </div>
+      <div class="formfield">
+        Select Batch No -
+        <input
+          id="batch"
+          maxlength="2"
+          type="number"
+          min="1"
+          max="99"
+          step="1"
+          value="1"
+        />
+      </div>
+      <div class="formfield">
+        Select Sequence No -
+        <input
+          id="sequence"
+          type="number"
+          min="1"
+          max="9999"
+          step="1"
+          maxlength="4"
+          value="1"
+        />
+      </div>
+      <div class="formfield">
+        <input type="submit" onclick="handleSubmit(event)" />
+      </div>
+      <div class="formfield">
+        Generated PRN -
+        <span id="prn"></span>
+      </div>
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
